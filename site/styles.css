@@ -19,7 +19,6 @@ svg { display: block; }
 .skip-link:focus { top: 12px; }
 .site-header { display: flex; align-items: center; justify-content: space-between; height: 104px; position: relative; z-index: 3; }
 .wordmark { font-size: 29px; font-weight: 780; letter-spacing: -1.45px; line-height: 1; }
-.wordmark-period { color: var(--cyan); }
 .header-status { color: #b8cad7; display: inline-flex; align-items: center; gap: 9px; font-size: 13px; font-weight: 600; }
 .status-dot { width: 7px; height: 7px; flex: 0 0 auto; background: var(--cyan); border-radius: 50%; }
 .hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(350px, .9fr); gap: 48px; align-items: center; min-height: 684px; padding: 42px 0 70px; }
