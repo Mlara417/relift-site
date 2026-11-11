@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Relift">
-  <rect width="64" height="64" rx="15" fill="#0E1721"/>
-  <path d="M18 49V15h15c9 0 14 4 14 12 0 6-3 10-8 11l9 11H37l-8-10h-2v10h-9Zm9-18h6c3 0 5-1 5-4s-2-4-5-4h-6v8Z" fill="#FFFFFF"/>
-  <rect x="18" y="53" width="30" height="4" rx="2" fill="#00A3E0"/>
-</svg>
