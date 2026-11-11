@@ -1,6 +1,6 @@
 # Relift website
 
-Relift's lightweight, mobile-first coming-soon splash page. Static HTML and CSS only: no JavaScript, package manager, third-party assets, analytics, forms, cookies or build step.
+Relift's lightweight, mobile-first website for the iPhone TestFlight beta. Static HTML and CSS only: no JavaScript, package manager, third-party assets, analytics, forms, cookies or build step.
 
 ## Contents
 
@@ -30,9 +30,10 @@ Open http://localhost:8000/.
 
 ## Launch checklist
 
-- Select a real signup provider before adding a waitlist CTA. The present **Explore Relift** button scrolls to benefits and does not claim to collect signups.
-- Replace the illustrative product preview with a verified in-app screenshot if desired.
+- The primary and footer CTAs link directly to the [Relift iPhone beta on TestFlight](https://testflight.apple.com/join/KT2D6ewM); verify invite capacity and availability before public promotion.
+- Replace the illustrative product preview with a verified in-app screenshot when ready; the concept is intentionally retained for now.
 - Add a real canonical URL and an absolute `og:image` when a permanent domain and visual have been chosen.
+- Add PR validation and browser checks in a future change; this branch intentionally keeps the existing deployment workflow.
 - Replace the temporary lettermark favicon with the approved app mark when finalized.
 - Keep the static site and mobile application deployment separate.
 
