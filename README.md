@@ -6,7 +6,8 @@ Relift's lightweight, mobile-first website for the iPhone TestFlight beta. Stati
 
 - `site/index.html`: page content, semantic HTML, metadata, and an **illustrative** workout concept (not a screenshot)
 - `site/styles.css`: responsive layout, brand styling, keyboard focus, and reduced-motion support
-- `site/favicon.svg`: temporary letterform, not Relift's finalized icon
+- `site/favicon.png`: **byte-for-byte Concept 08 v4 favicon**, copied from `Mlara417/relift/src/assets/images/favicon.png` (48 × 48)
+- `site/apple-touch-icon.png`: **byte-for-byte Concept 08 v4 app icon**, copied from `Mlara417/relift/src/assets/images/icon.png` (1024 × 1024)
 - `.github/workflows/pages.yml`: deploys **only** the `site/` directory to GitHub Pages
 
 ## Deploy via GitHub Pages
@@ -34,7 +35,19 @@ Open http://localhost:8000/.
 - Replace the illustrative product preview with a verified in-app screenshot when ready; the concept is intentionally retained for now.
 - Add a real canonical URL and an absolute `og:image` when a permanent domain and visual have been chosen.
 - Add PR validation and browser checks in a future change; this branch intentionally keeps the existing deployment workflow.
-- Replace the temporary lettermark favicon with the approved app mark when finalized.
+- The original v4 **custom wordmark SVG** is not currently committed to either repository, and raw source ZIP extraction was unavailable from Library. The temporary invented cyan-period treatment is removed, leaving plain text `Relift` as a noncanonical fallback. **Replace this with the exact `01_Logos/Vector_SVG` wordmark export from the original v4 pack** before claiming full website logo fidelity; do not trace or recreate it.
+- Concept 08 v4 artwork is cleared for internal integration, not unconditional public release. Complete designer and rights signoff before treating it as fully approved.
 - Keep the static site and mobile application deployment separate.
 
-Brand direction: deep navy `#0E1721`, cyan `#00A3E0`, white, system fonts, and calm, direct copy.
+## v4 asset provenance
+
+Original pack: `Relift_Brand_Kit_v4_Release_Review.zip`, Concept 08 (October 2026).
+
+| Website asset | Verified source Git blob SHA | Source SHA-256 |
+| --- | --- | --- |
+| `site/favicon.png` | `47ddad3036ae19fed21bf841a10883aa063a9af2` | `56536dca52aaf7e808acd9b8fd455d4ca06573f4ad9b1c271117102ffce40083` |
+| `site/apple-touch-icon.png` | `4bfa7b3b1f0d4b424f5ed2783a10e079b2e75285` | `506cb7df60180f792033ef109c76b66f4710dd5688be9f5c3600e45711a9fe9b` |
+
+GitHub verified each binary blob has the **identical Git SHA-1** as the checked-in source file. SHA-256 values are from `Mlara417/relift/docs/brand/asset-provenance-v4.json`.
+
+Brand direction: deep navy `#0E1721`, cyan `#00A3E0`, white, system fonts for body content, and calm, direct copy. The **logo remains custom vector artwork**; don't represent the current fallback text as the official wordmark.
