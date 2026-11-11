@@ -6,8 +6,10 @@ Relift's lightweight, mobile-first website for the iPhone TestFlight beta. Stati
 
 - `site/index.html`: page content, semantic HTML, metadata, and an **illustrative** workout concept (not a screenshot)
 - `site/styles.css`: responsive layout, brand styling, keyboard focus, and reduced-motion support
-- `site/favicon.png`: **byte-for-byte Concept 08 v4 favicon**, copied from `Mlara417/relift/src/assets/images/favicon.png` (48 × 48)
-- `site/apple-touch-icon.png`: **byte-for-byte Concept 08 v4 app icon**, copied from `Mlara417/relift/src/assets/images/icon.png` (1024 × 1024)
+- `site/relift-wordmark-reversed.svg`: exact Concept 08 v4 custom reversed wordmark SVG, sourced from `01_Logos/Vector_SVG/relift-wordmark-reversed.svg`. Use on navy backgrounds without adding a detached mark
+- `site/favicon.svg`: exact v4 optical favicon from `03_Web/Favicons/favicon.svg`
+- `site/favicon.png`: exact v4 48 × 48 favicon from `02_App/Expo/favicon.png` (identical to the v4 web export)
+- `site/apple-touch-icon.png`: exact v4 **web** 180 × 180 touch icon from `03_Web/Favicons/apple-touch-icon.png`
 - `.github/workflows/pages.yml`: deploys **only** the `site/` directory to GitHub Pages
 
 ## Deploy via GitHub Pages
@@ -35,8 +37,8 @@ Open http://localhost:8000/.
 - Replace the illustrative product preview with a verified in-app screenshot when ready; the concept is intentionally retained for now.
 - Add a real canonical URL and an absolute `og:image` when a permanent domain and visual have been chosen.
 - Add PR validation and browser checks in a future change; this branch intentionally keeps the existing deployment workflow.
-- The original v4 **custom wordmark SVG** is not currently committed to either repository, and raw source ZIP extraction was unavailable from Library. The temporary invented cyan-period treatment is removed, leaving plain text `Relift` as a noncanonical fallback. **Replace this with the exact `01_Logos/Vector_SVG` wordmark export from the original v4 pack** before claiming full website logo fidelity; do not trace or recreate it.
-- Concept 08 v4 artwork is cleared for internal integration, not unconditional public release. Complete designer and rights signoff before treating it as fully approved.
+- The source v4 **reversed custom wordmark SVG** is now used in both header and footer. Do not retype, distort, recolor, add a detached symbol, or lock marketing copy into the logo.
+- Concept 08 v4 art is cleared for internal integration, not unconditional public release. The v4 wordmark master is itself a JPEG-derived traced path, so original-art/design approval and legal rights/trademark clearance remain public-release gates.
 - Keep the static site and mobile application deployment separate.
 
 ## v4 asset provenance
@@ -45,9 +47,11 @@ Original pack: `Relift_Brand_Kit_v4_Release_Review.zip`, Concept 08 (October 202
 
 | Website asset | Verified source Git blob SHA | Source SHA-256 |
 | --- | --- | --- |
+| `site/relift-wordmark-reversed.svg` | `f4ea5eef801c59621d1613325e6f9c3942516a32` | `d11f3887451084a3804a3278fe4001cb14bf2bd3644a8ecf41bd514e1f0a857f` |
+| `site/favicon.svg` | `248461cb82fb21a723956828b809232a7bf95a8a` | `b05575c675ee894c9fab8f0ac04bf77c7f24cd929e87a04acd606715adeb57d5` |
 | `site/favicon.png` | `47ddad3036ae19fed21bf841a10883aa063a9af2` | `56536dca52aaf7e808acd9b8fd455d4ca06573f4ad9b1c271117102ffce40083` |
-| `site/apple-touch-icon.png` | `4bfa7b3b1f0d4b424f5ed2783a10e079b2e75285` | `506cb7df60180f792033ef109c76b66f4710dd5688be9f5c3600e45711a9fe9b` |
+| `site/apple-touch-icon.png` | `7c9c5274f38257395f78b417a92cca93c350fe85` | `d84aa492ccb6119ed558103c3c7ab0f843472e0df540533bf736407df35000c6` |
 
-GitHub verified each binary blob has the **identical Git SHA-1** as the checked-in source file. SHA-256 values are from `Mlara417/relift/docs/brand/asset-provenance-v4.json`.
+The Git blob SHAs and SHA-256 hashes for the wordmark SVG, website favicon SVG and 180px touch icon were computed from the uploaded original v4 ZIP and checked against the files created in GitHub. The 48px favicon matches the integrated v4 app export in `Mlara417/relift` and its existing source provenance manifest.
 
-Brand direction: deep navy `#0E1721`, cyan `#00A3E0`, white, system fonts for body content, and calm, direct copy. The **logo remains custom vector artwork**; don't represent the current fallback text as the official wordmark.
+Brand direction: deep navy `#0E1721`, cyan `#00A3E0`, white, native system fonts for content, and calm, direct copy. The identity is the **original custom vector artwork**, not retyped text or a newly approximated mark.
